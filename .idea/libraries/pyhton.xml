@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pyhton">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/discontinued/pyhton.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

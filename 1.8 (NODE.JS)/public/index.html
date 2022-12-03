@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LanTalk 1.8</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inbox">
+        <div class="inbox__people">
+          <h4>Active users</h4>
+        </div>
+        <div class="inbox__messages">
+          <div class="messages__history"></div>
+          <div class="fallback"></div>
+        </div>
+      </div>
+      
+      <div class="message_form_div">
+        <form class="message_form">
+          <input type="text" class="message_form__input" placeholder="Type a message" />
+          <button class="message_form__button" type="submit">
+            Enter
+          </button>
+        </form>
+      </div>
+
+      <div class="username_form_div">
+        <form class="username_form">
+          <input type="text" class="username_form_input" placeholder="Username" onClick="changeWebsite()">
+          <button class="username_form_button" type="submit">
+            Enter
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.socket.io/4.2.0/socket.io.min.js" integrity="sha384-PiBR5S00EtOj2Lto9Uu81cmoyZqR57XcOna1oAuVuIEjzj0wpqDVfD0JA9eXlRsj" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<script>
+  function changeWebsite() {
+    window.location = "chat.html"
+  }
+</script>

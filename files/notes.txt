@@ -1,0 +1,78 @@
+text inserting???
+from tkinter import *
+
+root = Tk()
+
+# specify size of window.
+root.geometry("250x170")
+
+# Create text widget and specify size.
+T = Text(root, height=5, width=52)
+
+# Create label
+l = Label(root, text="Fact of the Day")
+l.config(font=("Courier", 14))
+
+Fact = """A man can be arrested in
+Italy for wearing a skirt in public."""
+
+# Create button for next text.
+b1 = Button(root, text="Next", )
+
+# Create an Exit button.
+b2 = Button(root, text="Exit",
+            command=root.destroy)
+
+l.pack()
+T.pack()
+b1.pack()
+b2.pack()
+
+# Insert The Fact.
+T.insert(Tk.END, Fact)
+
+Tk.mainloop()
+
+
+
+=====
+
+default winow
+
+
+from tkinter import *
+
+# declare the window
+window = Tk()
+# set window title
+window.title("Python GUI App")
+# set window width and height
+window.configure(width=500, height=300)
+# set window background color
+window.configure(bg='lightgray')
+window.mainloop()
+
+
+=====
+
+
+
+centered
+
+
+from tkinter import *
+
+window = Tk()
+
+window.title("Python GUI App")
+window.configure(width=500, height=300)
+window.configure(bg='lightgray')
+
+# move window center
+winWidth = window.winfo_reqwidth()
+winwHeight = window.winfo_reqheight()
+posRight = int(window.winfo_screenwidth() / 2 - winWidth / 2)
+posDown = int(window.winfo_screenheight() / 2 - winwHeight / 2)
+window.geometry("+{}+{}".format(posRight, posDown))
+
+window.mainloop()
